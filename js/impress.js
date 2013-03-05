@@ -179,7 +179,7 @@
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
                           // good enough to run impress.js properly, sorry...
-                           ( ua.search(/(iphone)|(ipod)|(android)/) === -1 );
+                           ( ua.search(/(iphone)|(ipod)|(android 4)/) === -1 );
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
@@ -205,7 +205,7 @@
         
         perspective: 1000,
         
-        transitionDuration: 1000
+        transitionDuration: 700
     };
     
     // it's just an empty function ... and a useless comment.

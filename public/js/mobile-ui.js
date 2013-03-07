@@ -3,7 +3,7 @@
     var syncWithPresenter 	= true,
         el 					= document.querySelector('#impress');
 
-    Hammer(el).on("hold", function() {
+    Hammer(el).on("hold pinch", function() {
         impress().goto('birdseye');
     });
 

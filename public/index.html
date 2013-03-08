@@ -80,19 +80,21 @@ transform: scale(1, 1)">
                             <ul>
                                 <li>
                                     <span style="line-height: normal;">
-                                        a visually flexible application
+                                        <a href="http://www.indochino.com/" target="_blank">a visually flexible application</a>
                                         <br></span>
                                     <br></li>
                                 <li>
                                     <span style="line-height: normal;">
-                                        using device information to make&nbsp;
+                                        <a href="http://view.jquerymobile.com/1.3.0/" target="_blank">using device information to make&nbsp;
                                         <br>
-                                        smart choice in the skin
+                                        smart choices in the skin</a>
                                         <br>
                                         <br></span>
                                 </li>
                                 <li>
-                                    <span style="line-height: normal;">custom layouts and navigation</span>
+                                    <span style="line-height: normal;">
+                                        <a href="http://foodsense.is/" target="_blank">custom layouts and navigation, and no hover crutches!</a>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -188,12 +190,12 @@ transform: scale(1, 1)">
     body { font-size: 1.1em; }
   }
 
-  @media print {
+  @media speech {
     body { font-size: 1em; }
   }
 
   @media braille {
-    body { line-height: 1.2; }
+    body { line-height: 1.2em; }
   }
                 </code></pre>
             </div>
@@ -314,13 +316,19 @@ transform: scale(1, 1)">
 
             <div class="flex-center">
                 <pre class="language-css"><code>
-  @media min-resolution:300dpi {
+  @media (min-resolution:300dpi) {
     /* Very high resolution styles here */
   }
 
-  @media device-aspect-ratio:16/9 {
+  @media (device-aspect-ratio:16/9) {
     /* tv styles here */
   }
+
+  @media (min-width: 1024px) {
+  body {
+    background-color:hsla(200,50%,20%,1);
+  }
+}
                 </code></pre>
             </div>
 
@@ -353,19 +361,19 @@ transform: scale(1, 1)">
 
             <div class="flex-center">
                 <pre class="language-css"><code>
-  meta {
+  aside {
     transition:transform 0.15s ease-out;
   }
 
-  @media orientation:portrait {
-    meta {
-        transform: translateX(100%);
+  @media (orientation:portrait) {
+    aside {
+        transform: translateX(0);
     }
   }
 
-  @media orientation:landscape {
-    meta {
-        transform: translateX(0);
+  @media (orientation:landscape) {
+    aside {
+        transform: translateX(100%);
     }
   }
                 </code></pre>
@@ -538,7 +546,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 45px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://wiki.nginx.org/">wiki.nginx.org/</a>
+                        <a href="http://wiki.nginx.org/" target="_blank">wiki.nginx.org/</a>
                     </div>
                 </div>
             </div>
@@ -593,7 +601,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 53px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://nodejs.org">nodejs.org</a>
+                        <a href="http://nodejs.org" target="_blank">nodejs.org</a>
                     </div>
                 </div>
             </div>
@@ -636,7 +644,19 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://jade-lang.com/">Jade</a>
+                        <a href="http://jade-lang.com/" target="_blank">Jade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="componentContainer" style="top: 483px; left: 825px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+                    <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+                        <a href="http://embeddedjs.com/" target="_blank">ejs</a>
                     </div>
                 </div>
             </div>
@@ -760,7 +780,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://handlebarsjs.com/">Handlebars</a>
+                        <a href="http://handlebarsjs.com/" target="_blank">Handlebars</a>
                     </div>
                 </div>
             </div>
@@ -772,7 +792,19 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://mustache.github.com/">Mustache</a>
+                        <a href="http://mustache.github.com/" target="_blank">Mustache</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="componentContainer" style="top: 653px; left: 863px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+                    <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+                        <a href="http://embeddedjs.com/" target="_blank">EJS</a>
                     </div>
                 </div>
             </div>

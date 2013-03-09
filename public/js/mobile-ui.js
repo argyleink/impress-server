@@ -5,7 +5,7 @@
         supportsVibrate 	= "vibrate" in navigator;
 
     Hammer(el).on("pinch", function() {
-        impress().goto('birdseye');
+        impress().goto('breather');
     });
 
     Hammer(el).on("hold", function() {

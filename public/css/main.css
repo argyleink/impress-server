@@ -20,6 +20,18 @@
     Shall we begin?
 */
 
+.code:after {
+    content:"★";
+    position:absolute;
+    bottom:0;
+    right:0;
+    color:hsl(200,50%,50%);
+}
+
+.no-link-outlines a,
+.no-link-outlines a:hover {
+    background-color:transparent;
+}
 
 /* 
     We start with a good ol' reset.

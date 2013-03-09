@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024;width=device-width;" />
+    <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Responsive Web Design</title>
 
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="favicon.png" />
 </head>
 
-<body class="impress-not-supported">
+<body class="impress-supported">
 
     <div class="fallback-message">
         <p>
@@ -26,7 +26,7 @@
 
     <div id="impress" data-transition-duration="800" class="bg">
 
-        <div id="rwd" class="step" data-x="3986" data-y="1897"      data-scale="3">
+        <div id="rwd" class="step" data-x="4000" data-y="1897"      data-scale="3">
             <div style="width: 1024px; height: 768px">
 
                 <div class="componentContainer" style="top: -6px; left: 49px;
@@ -96,6 +96,11 @@ transform: scale(1, 1)">
                                         <a href="http://foodsense.is/" target="_blank">custom layouts and navigation, and no hover crutches!</a>
                                     </span>
                                 </li>
+                                <li>
+                                    <span style="line-height: normal;">
+                                        <a href="http://stuffandnonsense.co.uk/projects/320andup/" target="_blank">have some fun wid it homie!</a>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -158,7 +163,7 @@ transform: scale(1, 1)">
 
     </div>
 
-    <div id="media_queries/#/screen&print&braille" class="step" data-x="4505" data-y="4205"     data-z="-1000" >
+    <div id="media_queries/#/screen&print&braille" class="step code" data-x="4505" data-y="4205"     data-z="-1000" >
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 125px; left: 74px;
@@ -203,7 +208,7 @@ transform: scale(1, 1)">
         </div>
     </div>
 
-    <div id="media_queries/#/color&monochrome" class="step" data-x="4505" data-y="4887"     data-z="-1000" data-scale="1">
+    <div id="media_queries/#/color&monochrome" class="step code" data-x="4505" data-y="4887"     data-z="-1000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 183px; left: 72px;
@@ -242,7 +247,7 @@ transform: scale(1, 1)">
         </div>
     </div>
 
-    <div id="media_queries/#/projection&tv&print&handheld" class="step" data-x="4505" data-y="5577"     data-z="-1000" data-scale="1">
+    <div id="media_queries/#/projection&tv&print&handheld" class="step code" data-x="4505" data-y="5577"     data-z="-1000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 109px; left: 80px;
@@ -290,7 +295,7 @@ transform: scale(1, 1)">
         </div>
     </div>
 
-    <div id="media_queries/#/resolution&aspect_ratio" class="step" data-x="4485" data-y="6266" data-z="-1000" data-scale="1">
+    <div id="media_queries/#/resolution&aspect_ratio" class="step code" data-x="4485" data-y="6266" data-z="-1000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 206px; left: 73px;
@@ -335,7 +340,7 @@ transform: scale(1, 1)">
         </div>
     </div>
 
-    <div id="media_queries/#/portrait&landscape" class="step" data-x="4505" data-y="6956"     data-z="-1000" data-scale="1">
+    <div id="media_queries/#/portrait&landscape" class="step code" data-x="4505" data-y="6956"     data-z="-1000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 211px; left: 72px;
@@ -367,13 +372,13 @@ transform: scale(1, 1)">
 
   @media (orientation:portrait) {
     aside {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
   }
 
   @media (orientation:landscape) {
     aside {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
   }
                 </code></pre>
@@ -382,7 +387,7 @@ transform: scale(1, 1)">
         </div>
     </div>
 
-    <div id="media_queries/#/retina&devices" class="step" data-x="4492" data-y="7646"     data-z="-1000" data-scale="1">
+    <div id="media_queries/#/retina&devices" class="step code" data-x="4492" data-y="7646"     data-z="-1000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 225px; left: 73px;
@@ -414,15 +419,15 @@ transform: scale(1, 1)">
         /* Retina-specific stuff here */
   }
 
-  @media device-aspect-ratio: 2/3 {
+  @media (device-aspect-ratio: 2/3) {
         /* iPhone < 5 */
   }
 
-  @media device-aspect-ratio: 40/71 {
+  @media (device-aspect-ratio: 40/71) {
         /* iPhone 5 */
   }
 
-  @media device-aspect-ratio: 3/4 {
+  @media (device-aspect-ratio: 3/4) {
         /* iPhone */
   }
                 </code></pre>
@@ -526,7 +531,7 @@ transform: scale(1, 1)">
 
     </div>
 
-    <div id="detection/#/server/#/nginx" class="step" data-x="8649" data-y="805"     data-z="-5000" data-scale="1">
+    <div id="detection/#/server/#/nginx" class="step code" data-x="8649" data-y="805"     data-z="-5000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 55px; left: 107px;
@@ -559,29 +564,25 @@ transform: scale(1, 1)">
         <div style="width: 100%; height: 100%" class="flexbox">
 
             <div class="flex-center">
-                <pre class="language-css"><code>
-  meta {
-    transition:transform 0.15s ease-out;
-  }
-
-  @media orientation:portrait {
-    meta {
-        transform: translateX(100%);
+                <pre class="language-javascript"><code>
+location /index.html {
+        
+    if ($http_user_agent ~* "(android|blackberry|webos)") {
+        rewrite ^  /index_droid.html;
     }
-  }
 
-  @media orientation:landscape {
-    meta {
-        transform: translateX(0);
+    if ($http_user_agent ~* "(iphone|ipod)") { #ipad|
+        rewrite ^  /index_ios.html;
     }
-  }
+
+}
                 </code></pre>
             </div>
 
         </div>
     </div>
 
-    <div id="detection/#/server/#/node" class="step" data-x="8649" data-y="1795"     data-z="-5000" data-scale="1">
+    <div id="detection/#/server/#/node" class="step code" data-x="8649" data-y="1795"     data-z="-5000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 45px; left: 176px;
@@ -602,6 +603,8 @@ transform: scale(1, 1)">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 53px;
             font-weight: ; font-style: ; color: #333; text-align: ">
                         <a href="http://nodejs.org" target="_blank">nodejs.org</a>
+                        <br>
+                        <a href="http://css-tricks.com/musings-on-preprocessing/" target="_blank">Preprocessors</a>
                     </div>
                 </div>
             </div>
@@ -615,9 +618,26 @@ transform: scale(1, 1)">
 
             <div class="flex-center">
                 <pre class="language-javascript"><code>
-  // express detection
-  // node detection
-  // plugin detection
+/** Native NodeJS */
+var http = require('http')
+  , server = http.createServer(function(req) {
+        console.log(req.headers['user-agent']);
+    });
+ 
+server.listen(3000, 'localhost');
+ 
+/** NodeJS with Express */
+var express = require('express')
+  , http = require('http')
+  , app = express();
+ 
+http.createServer(app).listen(3000);
+ 
+app.get('/', function(req, res) {
+    console.log(req.get('user-agent'));
+});
+
+// thanks Scott! https://gist.github.com/ninjascribble/5119003
                 </code></pre>
             </div>
 
@@ -656,7 +676,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <a href="http://embeddedjs.com/" target="_blank">ejs</a>
+                        <a href="http://embeddedjs.com/" target="_blank">EJS</a>
                     </div>
                 </div>
             </div>
@@ -729,7 +749,7 @@ transform: scale(1, 1)">
 
     </div>
 
-    <div id="detection/#/client/#/javascript" class="step" data-x="11141" data-y="1788"     data-z="-5000" data-scale="1">
+    <div id="detection/#/client/#/javascript" class="step code" data-x="11141" data-y="1788"     data-z="-5000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 142px; left: 60px;
@@ -751,9 +771,34 @@ transform: scale(1, 1)">
 
             <div class="flex-center">
                 <pre class="language-javascript"><code>
-  // modernizr
-  // user agent
-  var a = [];
+var browser = 'unknown'
+  , version = 'unknown'
+  , patterns = {
+        android:    /android\s([0-9.]*)/i
+        chrome:     /chrome\/([0-9.]*)/i,
+        firefox:    /firefox\/([0-9.]*)/i,
+        ie:         /msie\s([0-9.]*)/i,
+        ipad:       /ipad.version\/([0-9.]*).safari/i,
+        iphone_4:   /iphone\sos\s4.version.mobile\/([0-9.]*).safari/i,
+        iphone_5:   /iphone\sos\s5.version.mobile\/([0-9.]*).safari/i,
+        safari:     /version\/([0-9.]*).safari/i
+    }
+  , key, matches;
+ 
+for (key in patterns) {
+ 
+    matches = navigator.userAgent.match(patterns[key]);
+ 
+    if (matches) {
+        browser = key;
+        version = matches[1];
+        break;
+    }
+}
+ 
+console.log(browser, version);
+
+// thanks again Scott! https://gist.github.com/ninjascribble/5120295
                 </code></pre>
             </div>
 
@@ -835,8 +880,7 @@ transform: scale(1, 1)">
 transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 172px;
-            font-weight: ; font-style: ; color: #333; text-align: "> <font color="#5c5c5c">cross&nbsp;
-                            <span style="font-size: 164px;">device</span></font> 
+            font-weight: ; font-style: ; color: #333; text-align: "> <font color="#5c5c5c">cross device</font> 
                         <br></div>
                 </div>
             </div>
@@ -856,7 +900,7 @@ transform: scale(1, 1)">
 
     </div>
 
-    <div id="detection/#/client/#/best_way_to_detect" class="step" data-x="7284.053333333333" data-y="4751.36"     data-z="-4000" data-scale="1">
+    <div id="detection/#/client/#/best_way_to_detect" class="step" data-x="7284" data-y="4751"     data-z="-4000" data-scale="1">
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 42px; left: 110px;
@@ -865,7 +909,7 @@ transform: scale(1, 1)">
 transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 192px;
-            font-weight: ; font-style: ; color: #333; text-align: ">Server</div>
+            font-weight: ; font-style: ; color: #333; text-align: ">1: Server</div>
                 </div>
             </div>
 
@@ -876,7 +920,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 192px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <font color="#575757">CSS</font>
+                        <font color="#575757">2: CSS</font>
                     </div>
                 </div>
             </div>
@@ -888,7 +932,7 @@ transform: scale(1, 1)">
                 <div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
                     <div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 182px;
             font-weight: ; font-style: ; color: #333; text-align: ">
-                        <font color="#808080">JavaScript</font>
+                        <font color="#808080">3: JS</font>
                     </div>
                 </div>
             </div>
@@ -897,7 +941,7 @@ transform: scale(1, 1)">
 
     </div>
 
-    <div id="meme2" class="step" data-x="238.93333333333334" data-y="177.49333333333334"    data-rotate-z="179.90874767107852" data-z="-50000" >
+    <div id="meme2" class="step" data-x="238" data-y="177"    data-rotate-z="180" data-z="-50000" >
         <div style="width: 1024px; height: 768px">
 
             <div class="componentContainer" style="top: 185px; left: 322px;
@@ -913,8 +957,862 @@ transform: scale(1, 1)">
 
 </div>
 
-<div id="birdseye" class="step active" data-x="6208" data-y="3829" data-scale="9"></div>
+<div id="layouts/#/" class="step" data-x="1400" data-y="737"      data-scale="2">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 82px; left: 86px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 169px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Responsive
 </div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 261px; left: 81px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 249px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Layouts
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/media_queries" class="step" data-x="1652" data-y="1761"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 110px; left: 136px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 169px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Media
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 265px; left: 132px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 169px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Queries
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 537px; left: 139px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 58px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="https://developer.mozilla.org/en-US/demos/detail/media-query-mario/launch" target="_blank">Media Query Mario 3</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 670px; left: 137px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 68px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://wicky.nillia.ms/enquire.js/" target="_blank">Fallback</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/flexbox" class="step code" data-x="1665" data-y="2457"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 115px; left: 82px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 250px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Flexbox
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 400px; left: 100px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 68px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://codepen.io/argyleink/pen/mxkoE" target="_blank">Kick Ass Center Center</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/flexbox/#/code" class="step slide" data-x="-27" data-y="1910"     data-z="-2000" data-scale="1">
+
+<div style="width: 100%; height: 100%" class="flexbox">
+
+            <div class="flex-center">
+                <pre class="language-javascript"><code>
+.flexbox {
+  display:flex;
+}
+.flex1 {
+  flex:1;
+}
+.flex2 {
+  flex:2;
+}
+.flex3 {
+  flex:3;
+}
+                </code></pre>
+            </div>
+
+        </div>
+
+<div class="componentContainer" style="top: 537px; left: 597px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 88px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://codepen.io/argyleink/pen/Kfyzj" target="_blank">example</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="layouts/#/ems&rems" class="step" data-x="1652" data-y="3147"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 512px; left: 153px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 114px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Relative Units
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 234px; left: 154px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 160px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+em, rem
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 31px; left: 144px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 240px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Meet
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/pixels" class="step" data-x="1658" data-y="3836"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 48px; left: 129px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 127px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Those
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 165px; left: 119px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 227px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+pixels<br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 481px; left: 131px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 98px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+just aren't reliable
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/viewport" class="step code" data-x="1665" data-y="4532"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 103px; left: 100px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 202px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Viewport
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 276px; left: 88px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 253px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Meta
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/viewport/#/code" class="step slide" data-x="614.4" data-y="4526.08"     data-z="-2000" data-scale="1">
+<div style="width: 100%; height: 100%" class="flexbox">
+
+            <div class="flex-center">
+                <pre class="language-javascript"><code>
+// bostonglobe.com
+< meta name="viewport" content="
+    width=device-width, 
+    initial-scale=1, 
+    minimum-scale=1, 
+    maximum-scale=1"
+>
+
+// smashingmagazine.com
+< meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0" 
+/>
+
+// http://css-tricks.com/
+< meta name="viewport" content="width=device-width">
+                </code></pre>
+            </div>
+
+        </div>
+</div>
+
+
+<div id="layouts/#/pseudo_elements" class="step" data-x="1652" data-y="5222"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 180px; left: 130px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 122px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Pseudo<br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 291px; left: 127px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 180px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Elements
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 551px; left: 607px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 40px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://arleym.com/" target="_blank">awesomeness</a><br>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="layouts/#/pseudo_selectors" class="step" data-x="1645" data-y="5918"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 191px; left: 155px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 133px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Pseudo
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 322px; left: 150px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 179px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Selectors
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/" class="step" data-x="2894" data-y="7229"     data-z="2000" data-scale="2">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 204px; left: 116px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 154px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Approaches
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/goldilocks" class="step" data-x="2894" data-y="8826"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 61px; left: 154px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 154px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Goldilocks
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 252px; left: 216px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<img src="http://johnpolacek.github.com/scrolldeck.js/decks/responsive/img/responsive_web_design.png"></img>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/mobile_first" class="step" data-x="3939" data-y="8834"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 64px; left: 135px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 242px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Mobile
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 231px; left: 121px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 381px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+First
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/responsive_flexible_adaptive" class="step" data-x="4963" data-y="8834"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 19px; left: 69px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 179px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Responsive
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 180px; left: 61px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 264px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Flexible
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 447px; left: 70px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 228px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Adaptive
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/bullets" class="step" data-x="5072" data-y="9536" data-rotate-x="-90"    data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 117px; left: 96px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<ul><li><span style="line-height: normal;">fluid widths and height</span><br></li><li><span style="line-height: normal;">fluid media and text</span></li><li><span style="line-height: normal;">device specific ux paths</span></li><li><span style="line-height: normal;">device drawn assets or svg</span></li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/columns&rows" class="step" data-x="5993" data-y="8840"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 22px; left: 122px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 201px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Columns
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 418px; left: 116px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 226px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Grids
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 213px; left: 716px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Rows
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/context" class="step" data-x="7024" data-y="8847"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 127px; left: 90px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 153px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Optimize for
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 268px; left: 73px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 247px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Context
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/progressive_enhancement" class="step" data-x="8062" data-y="8861"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 13px; left: 75px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 139px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Progressive<br>Enhancement<br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 470px; left: 74px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 81px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Feature<br>Detection<br>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/windows_8" class="step" data-x="9093" data-y="8861"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 208px; left: 95px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 172px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Windows 8
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="approaches/#/device_agnostic" class="step" data-x="10117" data-y="8847"     data-z="-2000" data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 165px; left: 57px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 130px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Device Agnostic
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 319px; left: 560px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 59px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Future Proof
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="codetools/#/" class="step" data-x="8021" data-y="6171"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 5px; left: 147px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 301px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Code
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 280px; left: 163px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 285px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Tools
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="codetools/#/links" class="step no-link-outlines" data-x="9066" data-y="6171"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 412px; left: 40px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 116px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://stuffandnonsense.co.uk/projects/320andup/" target="_blank">320 and up</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 271px; left: 667px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://www.initializr.com/" target="_blank">initializr</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 236px; left: 48px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="https://github.com/scottjehl/Respond" target="_blank">respond.js</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 157px; left: 45px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 24px; left: 46px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 115px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://twitter.github.com/bootstrap/index.html" target="_blank">Twitter Bootstrap</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 637px; left: 42px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://lessframework.com/" target="_blank">Less Framework</a>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 543px; left: 40px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://www.browserstack.com/" target="_blank">Browser Stack</a><br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 310px; left: 43px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 104px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://headjs.com/" target="_blank">head.js</a><br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 355px; left: 669px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 72px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+<a href="http://fittextjs.com/" target="_blank">fittext.js</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="holycrap_that_was_a_ton" class="step" data-x="239" data-y="867"      data-scale="1">
+<div style="width: 1024px; height: 768px">
+
+<div class="componentContainer" style="top: 213px; left: 75px;
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div class="transformContainer" style="-webkit-transform:   ; -moz-transform:   ; transform:   ">
+<div style="font-family: &#x27;Lato&#x27;, sans-serif; font-size: 197px;
+            font-weight: ; font-style: ; color: #333; text-align: ">
+Holy Crap
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- <div id="birdseye" class="step active" data-x="6075" data-y="4000" data-scale="12"></div> -->
 
 <div class="hint">
 <p>Use a spacebar or arrow keys to navigate</p>
